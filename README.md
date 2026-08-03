@@ -185,10 +185,6 @@ In your custom project, follow this example, but
 - this `README.md` should include your commands, process, and visuals, and
 - `docs/index.md` should include your narrative.
 
-Images -
-
-![alt text](image.png)
-![alt text](image-1.png)
 
 ## Custom Project - Iris Ensembles
 
