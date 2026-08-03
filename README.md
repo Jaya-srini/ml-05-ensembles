@@ -177,24 +177,12 @@ Right now GradientBoostingClassifier(random_state=RANDOM_STATE) uses all default
 
 modelC = GradientBoostingClassifier( n_estimators=150, max_depth=2, learning_rate=0.05, random_state=RANDOM_STATE )
 
-This slowed the boosting model down: smaller, simpler correction steps instead of a few big ones. In this case, it didnt change the results as much as the data is simpler. 
-
-In your custom project, follow this example, but
-
-- your figures and narrative should reflect your work,
-- this `README.md` should include your commands, process, and visuals, and
-- `docs/index.md` should include your narrative.
-
 
 ## Custom Project - Iris Ensembles
 
 `notebooks/ml_05_ensembles_custom.ipynb` applies the same workflow (single tree vs. random forest vs. gradient boosting) to Seaborn's **iris** dataset, predicting `species` from 4 flower measurements.
-
-Iris is a smaller, cleaner, more separable dataset than penguins, so it's a good check on whether ensembles still add value once a problem is already easy.
-
-**Results:** `single_tree` and `gradient_boosting` tied at 0.967 test accuracy; `random_forest` scored lower, at 0.900. Neither ensemble beat the single tree here - with only 30 test rows and well-separated classes, a shallow tree already captured nearly all the signal. Feature importances confirmed `petal_length` and `petal_width` drive the predictions, while sepal measurements barely matter.
-
-**Takeaway:** more model complexity is not automatically better - the analyst still has to check whether it earned its keep on held-out data.
+To run-
+Select the kernel (.venv recommended one) and then hit Runall for all the code execution.
 
 
 ## Project Documentation
