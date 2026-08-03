@@ -218,3 +218,83 @@ Name: count, dtype: int64
 2026-08-02 20:38:22 | INFO | M05 | Dataset: penguins   Target: species (classification)
 2026-08-02 20:38:22 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
 2026-08-02 20:38:22 | INFO | M05 | ========================
+2026-08-02 21:13:35 | INFO | M05C | === RUN START ===
+2026-08-02 21:13:35 | INFO | M05C | project=M05C
+2026-08-02 21:13:35 | INFO | M05C | repo_dir=ml-05-ensembles
+2026-08-02 21:13:35 | INFO | M05C | python=3.14.6
+2026-08-02 21:13:35 | INFO | M05C | os=Darwin 23.6.0
+2026-08-02 21:13:35 | INFO | M05C | shell=zsh
+2026-08-02 21:13:35 | INFO | M05C | cwd=notebooks
+2026-08-02 21:13:35 | INFO | M05C | github_actions=False
+2026-08-02 21:13:35 | INFO | M05C | Loading dataset: iris
+2026-08-02 21:13:35 | INFO | M05C | Loaded: 150 rows (instances), 5 columns
+2026-08-02 21:13:35 | INFO | M05C | Original rows: 150
+2026-08-02 21:13:35 | INFO | M05C | Model rows:    150
+2026-08-02 21:13:35 | INFO | M05C | Classes in target 'species': ['setosa', 'versicolor', 'virginica']
+2026-08-02 21:13:35 | DEBUG | M05C | Class counts:
+species
+setosa        50
+versicolor    50
+virginica     50
+Name: count, dtype: int64
+2026-08-02 21:13:35 | INFO | M05C | Train instances: 120
+2026-08-02 21:13:35 | INFO | M05C | Test instances: 30
+2026-08-02 21:13:35 | INFO | M05C | Fitting single tree + two ensembles
+2026-08-02 21:13:35 | DEBUG | M05C |   fitted: single_tree
+2026-08-02 21:13:35 | DEBUG | M05C |   fitted: random_forest
+2026-08-02 21:13:35 | DEBUG | M05C |   fitted: gradient_boosting
+2026-08-02 21:13:35 | INFO | M05C |   single_tree        test accuracy = 0.967
+2026-08-02 21:13:35 | INFO | M05C |   random_forest      test accuracy = 0.900
+2026-08-02 21:13:35 | INFO | M05C |   gradient_boosting  test accuracy = 0.967
+2026-08-02 21:13:35 | INFO | M05C | Best model: single_tree with test accuracy = 0.967
+2026-08-02 21:13:35 | INFO | M05C | Random forest feature importances (high to low):
+2026-08-02 21:13:35 | INFO | M05C |   petal_length         0.454
+2026-08-02 21:13:35 | INFO | M05C |   petal_width          0.412
+2026-08-02 21:13:35 | INFO | M05C |   sepal_length         0.116
+2026-08-02 21:13:35 | INFO | M05C |   sepal_width          0.018
+2026-08-02 21:13:35 | INFO | M05C | ========================
+2026-08-02 21:13:35 | INFO | M05C | SUMMARY
+2026-08-02 21:13:35 | INFO | M05C | ========================
+2026-08-02 21:13:35 | INFO | M05C | Dataset: iris   Target: species (classification)
+2026-08-02 21:13:35 | INFO | M05C | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 21:13:35 | INFO | M05C | ========================
+2026-08-02 21:15:31 | INFO | M05C | === RUN START ===
+2026-08-02 21:15:31 | INFO | M05C | project=M05C
+2026-08-02 21:15:31 | INFO | M05C | repo_dir=ml-05-ensembles
+2026-08-02 21:15:31 | INFO | M05C | python=3.14.6
+2026-08-02 21:15:31 | INFO | M05C | os=Darwin 23.6.0
+2026-08-02 21:15:31 | INFO | M05C | shell=zsh
+2026-08-02 21:15:31 | INFO | M05C | cwd=notebooks
+2026-08-02 21:15:31 | INFO | M05C | github_actions=False
+2026-08-02 21:15:31 | INFO | M05C | Loading dataset: iris
+2026-08-02 21:15:31 | INFO | M05C | Loaded: 150 rows (instances), 5 columns
+2026-08-02 21:15:31 | INFO | M05C | Original rows: 150
+2026-08-02 21:15:31 | INFO | M05C | Model rows:    150
+2026-08-02 21:15:31 | INFO | M05C | Classes in target 'species': ['setosa', 'versicolor', 'virginica']
+2026-08-02 21:15:31 | DEBUG | M05C | Class counts:
+species
+setosa        50
+versicolor    50
+virginica     50
+Name: count, dtype: int64
+2026-08-02 21:15:31 | INFO | M05C | Train instances: 120
+2026-08-02 21:15:31 | INFO | M05C | Test instances: 30
+2026-08-02 21:15:31 | INFO | M05C | Fitting single tree + two ensembles
+2026-08-02 21:15:31 | DEBUG | M05C |   fitted: single_tree
+2026-08-02 21:15:31 | DEBUG | M05C |   fitted: random_forest
+2026-08-02 21:15:31 | DEBUG | M05C |   fitted: gradient_boosting
+2026-08-02 21:15:31 | INFO | M05C |   single_tree        test accuracy = 0.967
+2026-08-02 21:15:31 | INFO | M05C |   random_forest      test accuracy = 0.900
+2026-08-02 21:15:31 | INFO | M05C |   gradient_boosting  test accuracy = 0.967
+2026-08-02 21:15:31 | INFO | M05C | Best model: single_tree with test accuracy = 0.967
+2026-08-02 21:15:31 | INFO | M05C | Random forest feature importances (high to low):
+2026-08-02 21:15:31 | INFO | M05C |   petal_length         0.454
+2026-08-02 21:15:31 | INFO | M05C |   petal_width          0.412
+2026-08-02 21:15:31 | INFO | M05C |   sepal_length         0.116
+2026-08-02 21:15:31 | INFO | M05C |   sepal_width          0.018
+2026-08-02 21:15:31 | INFO | M05C | ========================
+2026-08-02 21:15:31 | INFO | M05C | SUMMARY
+2026-08-02 21:15:31 | INFO | M05C | ========================
+2026-08-02 21:15:31 | INFO | M05C | Dataset: iris   Target: species (classification)
+2026-08-02 21:15:31 | INFO | M05C | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 21:15:31 | INFO | M05C | ========================

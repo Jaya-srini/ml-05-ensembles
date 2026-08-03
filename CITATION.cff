@@ -12,17 +12,13 @@ cff-version: "1.2.0"
 type: software
 
 title: "ml-05-ensembles"
-version: "0.1.0"
-date-released: "2026-06-16"
 
 authors:
-  - family-names: Case
-    given-names: Denise M.
-    orcid: "https://orcid.org/0000-0001-6165-7389"
-    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
-
-repository-code: "https://github.com/denisecase/ml-05-ensembles"
-url: "https://github.com/denisecase/ml-05-ensembles"
+  - family-names: Srinivas
+    given-names: Jaya
+    affiliation: "Northwest Missouri State University"
+repository-code: "https://github.com/jaya-srini/ml-05-ensembles"
+url: "https://github.com/jaya-srini/ml-05-ensembles"
 license: MIT
 
 abstract: >

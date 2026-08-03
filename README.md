@@ -25,7 +25,9 @@ See [docs/your-files.md] for more.
 
 Links:
 
-- [ml_05_case.ipynb](notebooks/ml_05_case.ipynb)
+- [ml_05_ensembles.ipynb](notebooks/ml_05_ensembles.ipynb)
+- [ml_05_ensembles_jaya.ipynb](notebooks/ml_05_ensembles_jaya.ipynb)
+- [ml_05_ensembles_custom.ipynb](notebooks/ml_05_ensembles_custom.ipynb)
 
 ## Working Files
 
@@ -183,13 +185,21 @@ In your custom project, follow this example, but
 - this `README.md` should include your commands, process, and visuals, and
 - `docs/index.md` should include your narrative.
 
-Remove unnecessary instructional comments in your custom files.
+Images -
 
-Update figures to present interesting results from your custom project:
+![alt text](image.png)
+![alt text](image-1.png)
 
-![Provide a Useful Caption](./docs/images/Figure_1.png)
+## Custom Project - Iris Ensembles
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+`notebooks/ml_05_ensembles_custom.ipynb` applies the same workflow (single tree vs. random forest vs. gradient boosting) to Seaborn's **iris** dataset, predicting `species` from 4 flower measurements.
+
+Iris is a smaller, cleaner, more separable dataset than penguins, so it's a good check on whether ensembles still add value once a problem is already easy.
+
+**Results:** `single_tree` and `gradient_boosting` tied at 0.967 test accuracy; `random_forest` scored lower, at 0.900. Neither ensemble beat the single tree here - with only 30 test rows and well-separated classes, a shallow tree already captured nearly all the signal. Feature importances confirmed `petal_length` and `petal_width` drive the predictions, while sepal measurements barely matter.
+
+**Takeaway:** more model complexity is not automatically better - the analyst still has to check whether it earned its keep on held-out data.
+
 
 ## Project Documentation
 
