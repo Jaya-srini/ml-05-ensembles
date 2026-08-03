@@ -83,7 +83,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-05-ensembles
+git clone https://github.com/jaya-srini/ml-05-ensembles
 
 cd ml-05-ensembles
 code .
@@ -165,13 +165,17 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ```
 
 ## Findings and Visuals
+# charts viz
+![alt text](image.png)
+![alt text](image-1.png)
 
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
+# Phase 4 - Technical change
+
+Right now GradientBoostingClassifier(random_state=RANDOM_STATE) uses all defaults (100 estimators, depth 3, lr 0.1) - nothing to compare against.  Tuned the gradient boost-  
+
+modelC = GradientBoostingClassifier( n_estimators=150, max_depth=2, learning_rate=0.05, random_state=RANDOM_STATE )
+
+This slowed the boosting model down: smaller, simpler correction steps instead of a few big ones. In this case, it didnt change the results as much as the data is simpler. 
 
 In your custom project, follow this example, but
 
